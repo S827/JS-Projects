@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETO's Recipe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>ETo's Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search Recipes...">
+            <button type="button" onclick="search()">Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="filters">
+            <h2>Filters</h2>
+            <label for="category">Category:</label>
+            <select name="" id="category">
+                <option value="all">All</option>
+                <option value="appetizers">Appetizers</option>
+                <option value="entrees">Entress</option>
+                <option value="desserts">Desserts</option>
+            </select>
+            <label for="difficulty">Difficulty:</label>
+            <select name="" id="difficulty">
+                <option value="all">All</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button type="button" onclick="filter()">Filter</button>
+        </section>
+        <section class="recipes">
+            <h2>Recipes</h2>
+            <div id="recipe-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; ETo's Recipe</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
