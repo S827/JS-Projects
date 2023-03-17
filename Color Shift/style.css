@@ -10,4 +10,5 @@ button {
     align-items: center;
     background-color: pink;
     color: black;
+    padding: 10px;
 }
