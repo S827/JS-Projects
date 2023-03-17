@@ -8,4 +8,6 @@ button {
     margin: auto;
     width: 10%;
     align-items: center;
+    background-color: pink;
+    color: black;
 }
